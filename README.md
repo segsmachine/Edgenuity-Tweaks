@@ -1,7 +1,7 @@
 # Edgenuity-Scripts
 
 CHANGELOG <br>
-        Autoadvance/Autosubmit Fixed <br>
+        <tab> Autoadvance/Autosubmit Fixed <br>
         Modified Hotkeys <br>
                 Removed hotkey for "Next" (Ctrl+Shift+P) <br>
                         Reason: Rendered useless by autoadvance <br>
