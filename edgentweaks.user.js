@@ -3,7 +3,7 @@
 // @namespace    https://github.com/
 // @version      1.6
 // @description  Adds tweaks to edgenuity
-// @author       GW, segs
+// @author       GW, xoSidon
 // @match        *://*.core.learn.edgenuity.com/*
 // @grant        none
 // @require      https://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js
@@ -18,16 +18,13 @@
                         Reason: Rendered useless by autoadvance
                 Added hotkey for "Submit" (Ctrl+Enter)
                         Reason: Allows for quick submission of answers during assignments
-Cleaned Code Formatting
-Added Documentation
+        Cleaned Code Formatting
+        Added Documentation
 */
 
 
 var $, jQuery;
 $ = jQuery = window.jQuery;
-
-// removes parsing error
-var shortcut = 'shortcut'
 
 setTimeout( //2 sec delay to load before trying to run
         function main() {
@@ -201,49 +198,60 @@ window.configbutton.style.color = "#f9a619" */
                         /* Shortcut Hotkeys */
 
                         /* Keyboard Hotkeys */
-                        shortcut.add("Ctrl+Shift+H", function () {
+
+                        shortcut('Ctrl+Shift+H', function (event, handler) {
+                            /* Prevent the default refresh event under WINDOWS system
+                            event.preventDefault(); */
                                 $("#HideButton")
                                         .click();
                                 $("#userconsole")
                                         .prepend("<li>stealth mode hotkey pressed " + $("#HideButton")
                                                 .is(":checked"));
                         })
-                        shortcut.add("Ctrl+Shift+G", function () {
+                        shortcut('Ctrl+Shift+G', function (event, handler) {
+                            /* Prevent the default refresh event under WINDOWS system
+                            event.preventDefault(); */
                                 $("#GuessPractice")
                                         .click();
                                 $("#userconsole")
                                         .prepend("<li>Guess hotkey pressed " + $("#GuessPractice")
                                                 .is(":checked"));
                         })
-                        shortcut.add("Ctrl+Shift+A", function () {
+                        shortcut('Ctrl+Shift+A', function () {
+                            /* Prevent the default refresh event under WINDOWS system
+                            event.preventDefault(); */
                                 $("#AutoAdvance")
                                         .click();
                                 $("#userconsole")
                                         .prepend("<li>Autoadvance hotkey pressed " + $("#AutoAdvance")
                                                 .is(":checked"));
                         })
-                        shortcut.add("Ctrl+Shift+S", function () {
+                        shortcut('Ctrl+Shift+S', function () {
+                            /* Prevent the default refresh event under WINDOWS system
+                            event.preventDefault(); */
                                 $("#SearchButton > button")
                                         .click();
                                 $("#userconsole")
                                         .prepend("<li>Search hotkey pressed ");
                         })
-                        shortcut.add("Ctrl+Shift+V", function () {
+
+                        shortcut('Ctrl+Enter', function () {
+                            /* Prevent the default refresh event under WINDOWS system
+                            event.preventDefault(); */
                                 $("#stageFrame")
-                                        .contents()
-                                        .find(".uibtn.uibtn-blue.uibtn-arrow-next")[0].click()
-                                    .click();
+                                        .contents().find(".uibtn.uibtn-blue.uibtn-arrow-next")[0].click();
                                 $("#userconsole")
-                                        .prepend("<li>Next question hotkey pressed ")
+                                        .prepend("<li>Next hotkey pressed ");
                         })
-                        shortcut.add("Ctrl+Shift+Enter", function () {
+
+                    /* shortcut("Ctrl+Enter", function (event, handler) {
+                            //Prevent the default refresh event under WINDOWS system
+                            event.preventDefault();
                                 $("#stageFrame")
-                                        .contents()
-                                        .find(".uibtn.uibtn-40.uibtn-icon")[0].click()
-                                    .click();
+                                        .contents().find("#btnCheck")[0].click();
                                 $("#userconsole")
-                                        .prepend("<li>Done/Check hotkey pressed ")
-                        })
+                                        .prepend("<li>Done/Check hotkey pressed ");
+                        }) */
 
 
                         //!!!!!!!!!!!!!!!!!!START REAL UI BUILDING !!!!!!!!!!!!!!!!!!
