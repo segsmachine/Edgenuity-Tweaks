@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Edgentweaks
 // @namespace    https://github.com/segsmachine/Edgenuity-Scripts/
-// @version      1.6
+// @version      1.6.1
 // @author       GW, segsmachine
 // @description  Adds tweaks to edgenuity
 // @source       https://github.com/segsmachine/Edgenuity-Scripts/blob/main/edgentweaks.user.js
@@ -13,6 +13,7 @@
 // ==/UserScript==
 
 /* CHANGELOG
+        Functional
         Autoadvance/Autosubmit Fixed
         Modified Hotkeys
                 Removed hotkey for "Next" (Ctrl+Shift+P)
