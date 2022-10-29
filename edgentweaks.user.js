@@ -1,9 +1,13 @@
 // ==UserScript==
 // @name         Edgentweaks
-// @namespace    https://github.com/
+// @namespace    https://github.com/segsmachine/Edgenuity-Scripts/
 // @version      1.6
-// @description  Adds tweaks to edgenuity
 // @author       GW, segsmachine
+// @description  Adds tweaks to edgenuity
+// @source       https://github.com/segsmachine/Edgenuity-Scripts/blob/main/edgentweaks.user.js
+// @downloadURL  https://github.com/segsmachine/Edgenuity-Scripts/raw/main/edgentweaks.user.js
+// @updateURL    https://github.com/segsmachine/Edgenuity-Scripts/raw/main/edgentweaks.user.js
+// @supportURL   https://github.com/segsmachine/Edgenuity-Scripts/issues
 // @match        *://*.core.learn.edgenuity.com/*
 // @grant        none
 // @require      https://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js
@@ -199,54 +203,42 @@ window.configbutton.style.color = "#f9a619" */
 
                         /* Keyboard Hotkeys */
 
-                        shortcut('Ctrl+Shift+H', function (event, handler) {
-                            /* Prevent the default refresh event under WINDOWS system
-                            event.preventDefault(); */
+                        shortcut.add('Ctrl+Shift+H', function () {
                                 $("#HideButton")
                                         .click();
                                 $("#userconsole")
                                         .prepend("<li>stealth mode hotkey pressed " + $("#HideButton")
                                                 .is(":checked"));
                         })
-                        shortcut('Ctrl+Shift+G', function (event, handler) {
-                            /* Prevent the default refresh event under WINDOWS system
-                            event.preventDefault(); */
+                        shortcut.add('Ctrl+Shift+G', function () {
                                 $("#GuessPractice")
                                         .click();
                                 $("#userconsole")
                                         .prepend("<li>Guess hotkey pressed " + $("#GuessPractice")
                                                 .is(":checked"));
                         })
-                        shortcut('Ctrl+Shift+A', function () {
-                            /* Prevent the default refresh event under WINDOWS system
-                            event.preventDefault(); */
+                        shortcut.add('Ctrl+Shift+A', function () {
                                 $("#AutoAdvance")
                                         .click();
                                 $("#userconsole")
                                         .prepend("<li>Autoadvance hotkey pressed " + $("#AutoAdvance")
                                                 .is(":checked"));
                         })
-                        shortcut('Ctrl+Shift+S', function () {
-                            /* Prevent the default refresh event under WINDOWS system
-                            event.preventDefault(); */
+                        shortcut.add('Ctrl+Shift+S', function () {
                                 $("#SearchButton > button")
                                         .click();
                                 $("#userconsole")
                                         .prepend("<li>Search hotkey pressed ");
                         })
 
-                        shortcut('Ctrl+Enter', function () {
-                            /* Prevent the default refresh event under WINDOWS system
-                            event.preventDefault(); */
+                        shortcut.add('Ctrl+Enter', function () {
                                 $("#stageFrame")
                                         .contents().find(".uibtn.uibtn-blue.uibtn-arrow-next")[0].click();
                                 $("#userconsole")
                                         .prepend("<li>Next hotkey pressed ");
                         })
 
-                    /* shortcut("Ctrl+Enter", function (event, handler) {
-                            //Prevent the default refresh event under WINDOWS system
-                            event.preventDefault();
+                    /* shortcut("Ctrl+Enter", function () {
                                 $("#stageFrame")
                                         .contents().find("#btnCheck")[0].click();
                                 $("#userconsole")
