@@ -3,7 +3,7 @@
 ## CHANGELOG
 - Autoadvance/Autosubmit Fixed
 - Modified Hotkeys
-        -- Removed hotkey for "Next" (Ctrl+Shift+P)
+-- Removed hotkey for "Next" (Ctrl+Shift+P)
                 --- Reason: Rendered useless by autoadvance
         -- Removed hotkey for "Previous" (Ctrl+Shift+O)
                 --- Reason: Rendered useless by autoadvance
