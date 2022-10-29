@@ -3,7 +3,7 @@
 // @namespace    https://github.com/
 // @version      1.6
 // @description  Adds tweaks to edgenuity
-// @author       GW, xoSidon
+// @author       GW, segsmachine
 // @match        *://*.core.learn.edgenuity.com/*
 // @grant        none
 // @require      https://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js
