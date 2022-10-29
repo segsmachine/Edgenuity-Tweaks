@@ -1,9 +1,12 @@
 // ==UserScript==
 // @name         Edgentweaks
-// @namespace    https://github.com/
+// @namespace    https://github.com/segsmachine/Edgenuity-Scripts/
 // @version      1.6
-// @description  Adds tweaks to edgenuity
 // @author       GW, segsmachine
+// @description  Adds tweaks to edgenuity
+// @source       https://github.com/segsmachine/Edgenuity-Scripts/blob/main/edgentweaks.user.js
+// @updateURL    https://github.com/segsmachine/Edgenuity-Scripts/raw/main/edgentweaks.user.js
+// @supportURL   https://github.com/segsmachine/Edgenuity-Scripts/issues
 // @match        *://*.core.learn.edgenuity.com/*
 // @grant        none
 // @require      https://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js
