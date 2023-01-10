@@ -3,7 +3,7 @@
 - *EdgenTweaks* 1.6.1
 
 
-# CHANGELOG 🌄
+# EDGENTWEAKS CHANGELOG 🌄
 
 ## 1.6.1
 - Added Assignment Unlocker by SubatomicMC
