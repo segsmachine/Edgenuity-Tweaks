@@ -1,8 +1,6 @@
 # Edgenuity-Scripts
+
 - *EdgenTweaks* 1.6.1
-
-------------
-
 
 
 # CHANGELOG 🌄
