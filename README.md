@@ -4,11 +4,12 @@
 
 
 
-## CHANGELOG 🌄
+# CHANGELOG 🌄
 
-------------
+## 1.6.1
+- Added Assignment Unlocker by SubatomicMC
 
-
+## 1.6
 
 ### Bug Fixes 🔨
 
