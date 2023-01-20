@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Edgentweaks
 // @namespace    https://github.com/segsmachine/Edgenuity-Scripts/
-// @version      1.6.1
+// @version      1.6.2
 // @author       GW, segsmachine
 // @description  Adds tweaks to edgenuity
 // @source       https://github.com/segsmachine/Edgenuity-Scripts/blob/main/edgentweaks.user.js
