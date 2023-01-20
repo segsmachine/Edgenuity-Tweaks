@@ -1,11 +1,7 @@
-# Edgenuity-Scripts
-
-- *EdgenTweaks* 1.6.1
-
-
-# EDGENTWEAKS CHANGELOG 🌄
-
 ## 1.6.1
+
+### Features 📰
+
 - Added Assignment Unlocker by SubatomicMC
 
 ## 1.6
@@ -33,6 +29,3 @@
 ### Misc 👾
 - Cleaned Code Formatting
 - Added Documentation
-
-------------
-
